@@ -1,7 +1,7 @@
 import { getCSS, tickConfig } from "./commons.js"
 
 async function quantidadeUsuarios() {
-    const url = 'https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/refs/heads/Aula01/transporte/transporte-numero-tipos-locomocao.json'
+    const url = 'https://raw.githubusercontent.com/ProfGesinelly/Turma_AT_CienciaDados/refs/heads/main/quantidadesdeusuarios.json'
     const res = await fetch(url)
     const dados = await res.json()
     const nomeDosMeioTransporte = Object.keys(dados)

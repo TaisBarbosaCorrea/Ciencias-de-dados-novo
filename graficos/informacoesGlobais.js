@@ -1,15 +1,15 @@
-const url = 'https://raw.githubusercontent.com/silviosnjr/CienciaDeDados-CriandoGraficosDinamicosComJavaScript/refs/heads/Aula01/transporte/transporte-numero-tipos-locomocao.json'
+const url = 'https://raw.githubusercontent.com/ProfGesinelly/Turma_AT_CienciaDados/refs/heads/main/quantidadesdeusuarios.json'
 
 async function visualizarInformacoesGlobais() {
     const res = await fetch(url)
     const dados = await res.json()
-    const Automóvel_próprio = (dados.Automóvel_próprio / 1e6)
+    const Automóvel_próprio = (dados.Automovel_proprio / 1e6)
     const Metrô = (dados.Metrô / 1e6)
     const Ônibus = (dados.Ônibus / 1e6)
     const Trem = (dados.Trem / 1e6)
     const Bicicleta = (dados.Bicicleta / 1e6)
     const Caminhando = (dados.Caminhando / 1e6)
-    const Automóvel_de_aplicativo = (dados.Automóvel_de_aplicativo / 1e6)
+    const Automóvel_de_aplicativo = (dados.Automovel_de_aplicativo / 1e6)
     const Outros = (dados.Outros / 1e6)
 
 
